@@ -1,0 +1,170 @@
+
+R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+[R.app GUI 1.73 (7892) x86_64-apple-darwin17.0]
+
+WARNING: You're using a non-UTF8 locale, therefore only ASCII characters will work.
+Please read R for Mac OS X FAQ (see Help) section 9 and adjust your system preferences accordingly.
+[History restored from /Users/luciestrasser/.Rapp.history]
+
+2021-01-25 10:06:57.027 R[4938:141349] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fba36788ed0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 10:08:36.013 R[4938:141349] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fba3b959060>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 10:08:36.015 R[4938:141349] Warning: Expected min height of view: (<NSButton: 0x7fba3b934600>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 10:08:36.018 R[4938:141349] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fba3b9602d0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 10:08:36.019 R[4938:141349] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fba3b961060>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 10:08:37.376 R[4938:141349] +[NSSavePanel _warmUp] attempted warmup
+> 
+> install.packages("sswirl")
+--- Please select a CRAN mirror for use in this session ---
+Warning: failed to download mirrors file (cannot open URL 'https://cran.r-project.org/CRAN_mirrors.csv'); using local file '/Library/Frameworks/R.framework/Resources/doc/CRAN_mirrors.csv'
+Warning: unable to access index for repository https://mirror.las.iastate.edu/CRAN/src/contrib:
+  cannot open URL 'https://mirror.las.iastate.edu/CRAN/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://mirror.las.iastate.edu/CRAN/bin/macosx/contrib/4.0:
+  cannot open URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/contrib/4.0/PACKAGES'
+Warning messages:
+1: In download.file(url, destfile = f, quiet = TRUE) :
+  URL 'https://cran.r-project.org/CRAN_mirrors.csv': status was 'Couldn't resolve host name'
+2: package 'sswirl' is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 
+> library("swirl")
+
+| Hi! Type swirl() when you are ready to begin.
+
+> 
+> swirl()
+
+| Welcome to swirl! Please sign in. If you've been here before, use the same
+| name as you did then. If you are new, call yourself something unique.
+
+What shall I call you? Lucie Strasser
+
+| Thanks, Lucie Strasser. Let's cover a couple of quick housekeeping items
+| before we begin our first lesson. First of all, you should know that when
+| you see '...', that means you should press Enter when you are done reading
+| and ready to continue.
+
+...  <-- That's your cue to press Enter to continue
+
+| Also, when you see 'ANSWER:', the R prompt (>), or when you are asked to
+| select from a list, that means it's your turn to enter a response, then
+| press Enter to continue.
+
+Select 1, 2, or 3 and press Enter 
+
+1: Continue.
+2: Proceed.
+3: Let's get going!
+
+Selection: 
+Enter an item from the menu, or 0 to exit
+Selection: 0
+
+| You can exit swirl and return to the R prompt (>) at any time by pressing
+| the Esc key. If you are already at the prompt, type bye() to exit and save
+| your progress. When you exit properly, you'll see a short message letting
+| you know you've done so.
+
+| When you are at the R prompt (>):
+| -- Typing skip() allows you to skip the current question.
+| -- Typing play() lets you experiment with R on your own; swirl will ignore
+| what you do...
+| -- UNTIL you type nxt() which will regain swirl's attention.
+| -- Typing bye() causes swirl to exit. Your progress will be saved.
+| -- Typing main() returns you to swirl's main menu.
+| -- Typing info() displays these options again.
+
+| Let's get started!
+2021-01-25 17:45:16.090 R[4938:141349] Warning: Expected min height of view: (<NSButton: 0x7fba365e71b0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 17:45:16.096 R[4938:141349] Warning: Expected min height of view: (<NSButton: 0x7fba365e5e80>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 17:45:16.097 R[4938:141349] Warning: Expected min height of view: (<NSButton: 0x7fba365e6760>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 17:45:18.251 R[4938:141349] Warning: Expected min height of view: (<NSButton: 0x7fba366d9270>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 17:45:18.255 R[4938:141349] Warning: Expected min height of view: (<NSButton: 0x7fba366b6730>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-25 17:45:18.256 R[4938:141349] Warning: Expected min height of view: (<NSButton: 0x7fba366d29a0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+
+...1
+
+| To begin, you must install a course. I can install a course for you from the
+| internet, or I can send you to a web page
+| (https://github.com/swirldev/swirl_courses) which will provide course
+| options and directions for installing courses yourself. (If you are not
+| connected to the internet, type 0 to exit.)
+
+1: R Programming: The basics of programming in R
+2: Regression Models: The basics of regression modeling in R
+3: Statistical Inference: The basics of statistical inference in R
+4: Exploratory Data Analysis: The basics of exploring data in R
+5: Don't install anything for me. I'll do it myself.
+
+Selection: 3
+  |=====================================================================| 100%
+
+| Course installed successfully!
+
+
+| Please choose a course, or type 0 to exit swirl.
+
+1: Statistical Inference
+2: Take me to the swirl course repository!
+
+Selection: 
+Enter an item from the menu, or 0 to exit
+Selection: 0
+
+| Leaving swirl now. Type swirl() to resume.
+
+> "library(pkg)"
+[1] "library(pkg)"
+> swirl()
+
+| Welcome to swirl! Please sign in. If you've been here before, use the same
+| name as you did then. If you are new, call yourself something unique.
+
+What shall I call you? Lucie Strasser
+
+| Please choose a course, or type 0 to exit swirl.
+
+1: Statistical Inference
+2: Take me to the swirl course repository!
+
+Selection: 0
+
+| Leaving swirl now. Type swirl() to resume.
+
+> swirl()
+
+| Welcome to swirl! Please sign in. If you've been here before, use the same
+| name as you did then. If you are new, call yourself something unique.
+
+What shall I call you? Lucie Strasser
+
+| Please choose a course, or type 0 to exit swirl.
+
+1: Statistical Inference
+2: Take me to the swirl course repository!
+
+Selection: 
