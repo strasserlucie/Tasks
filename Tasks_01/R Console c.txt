@@ -1,0 +1,621 @@
+
+R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+[R.app GUI 1.73 (7892) x86_64-apple-darwin17.0]
+
+WARNING: You're using a non-UTF8 locale, therefore only ASCII characters will work.
+Please read R for Mac OS X FAQ (see Help) section 9 and adjust your system preferences accordingly.
+[History restored from /Users/luciestrasser/.Rapp.history]
+
+2021-01-28 19:54:04.143 R[20655:560877] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7f9b20f5b700>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-28 19:54:05.521 R[20655:560877] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7f9b1ee1d680>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-28 19:54:05.522 R[20655:560877] Warning: Expected min height of view: (<NSButton: 0x7f9b1ef95ea0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-28 19:54:05.524 R[20655:560877] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7f9b1ef96640>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-28 19:54:05.526 R[20655:560877] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7f9b1ef97970>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-01-28 19:54:07.204 R[20655:560877] +[NSSavePanel _warmUp] attempted warmup
+> library (swirl)
+
+| Hi! Type swirl() when you are ready to begin.
+
+> swirl()
+
+| Welcome to swirl! Please sign in. If you've been here before, use the same
+| name as you did then. If you are new, call yourself something unique.
+
+What shall I call you? Lucie Strasser
+
+| Please choose a course, or type 0 to exit swirl.
+
+1: Statistical Inference
+2: Take me to the swirl course repository!
+
+Selection: 1
+
+| Please choose a lesson, or type 0 to return to course menu.
+
+ 1: Introduction             2: Probability1          
+ 3: Probability2             4: ConditionalProbability
+ 5: Expectations             6: Variance              
+ 7: CommonDistros            8: Asymptotics           
+ 9: T Confidence Intervals  10: Hypothesis Testing    
+11: P Values                12: Power                 
+13: Multiple Testing        14: Resampling            
+
+
+Selection: 2
+  |                                                                     |   0%
+
+| Probability. (Slides for this and other Data Science courses may be found at
+| github https://github.com/DataScienceSpecialization/courses. If you care to
+| use them, they must be downloaded as a zip file and viewed locally. This
+| lesson corresponds to Statistical_Inference/Probability.)
+
+...3
+  |==                                                                   |   3%
+| In this lesson, we'll review basic ideas of probability, the study of
+| quantifying the likelihood of particular events occurring. Note the
+| similarity between the words probability and probably. Every time you use
+| the latter word you're implying that an event is more likely than not to
+| occur.
+
+...5
+  |=====                                                                |   7%
+| The first step in understanding probability is to see if you understand what
+| outcomes of an experiment are possible. For instance, if you were rolling a
+| single, fair die once, how many outcomes are possible?
+
+1: 1
+2: 6
+3: Too many
+4: 4
+
+Selection: 5
+Enter an item from the menu, or 0 to exit
+Selection: 0
+
+| One more time. You can do it!
+
+| How many sides or faces does a die (or any cube or box) have?
+
+1: Too many
+2: 1
+3: 6
+4: 4
+
+Selection: 4
+
+| You almost had it, but not quite. Try again.
+
+| How many sides or faces does a die (or any cube or box) have?
+
+1: 1
+2: Too many
+3: 6
+4: 4
+
+Selection: 6
+Enter an item from the menu, or 0 to exit
+Selection: 3
+
+| You are quite good my friend!
+  |=======                                                              |  10%
+| The probability of a particular outcome of an experiment is the ratio of the
+| number of ways that outcome can occur to all possible outcomes of the
+| experiment. Since there are 6 possible outcomes to the experiment of rolling
+| a die, and we assume the die is fair, each outcome is equally likely. So
+| what is the probability of rolling a 2?
+
+1: 2/6
+2: 1/6
+3: 1/3
+4: 0
+
+Selection: 2
+
+| You got it!
+  |==========                                                           |  14%
+| What is the probability of rolling an even number?
+
+1: 1/3
+2: 1/2
+3: 1
+4: 0
+
+Selection: 2
+
+| Keep working like that and you'll get there!
+  |============                                                         |  17%
+| Since the probability of a particular outcome or event E is the ratio of
+| ways that E could occur to the number of all possible outcomes or events,
+| the probability of E, denoted P(E), is always between 0 and 1. Impossible
+| events have a probability of 0 (since they can't occur) and events that are
+| certain to occur have a probability of 1.
+
+...5
+  |==============                                                       |  21%
+| If you're doing an experiment with n possible outcomes, say e1, e2, ..., en,
+| then the sum of the probabilities of all the outcomes is 1. If all the
+| outcomes are equally likely, as in the case of a fair die, then the
+| probability of each is 1/n.
+
+...6
+  |=================                                                    |  24%
+| If A and B are two independent events then the probability of them both
+| occurring is the product of the probabilities. P(A&B) = P(A) * P(B)
+
+...7
+  |===================                                                  |  28%
+| Suppose you rolled the fair die twice in succession. What is the probability
+| of rolling two 4's?
+
+1: 1/36
+2: 2/6
+3: 1/6
+4: 0
+
+Selection: 2
+
+| Not quite, but you're learning! Try again.
+
+| The probability of rolling the first 4 is 1/6. The second roll of the dice
+| doesn't depend on the outcome of the first, so that also has a probability
+| of 1/6. The probability of both events occurring is 1/6 * 1/6. This makes
+| intuitive sense since the probability of 2 such events occurring has to be
+| smaller than the probability of only 1 event.
+
+1: 1/6
+2: 0
+3: 2/6
+4: 1/36
+
+Selection: 4
+
+| Keep working like that and you'll get there!
+  |=====================                                                |  31%
+| Suppose you rolled the fair die twice. What is the probability of rolling
+| the same number two times in a row?
+
+1: 0
+2: 1/36
+3: 2/6
+4: 1/6
+
+Selection: 2
+
+| You almost had it, but not quite. Try again.
+
+| Since we don't care what the outcome of the first roll is, its probability
+| is 1. The second roll of the dice has to match the outcome of the first, so
+| that has a probability of 1/6. The probability of both events occurring is 1
+| * 1/6.
+
+1: 1/6
+2: 0
+3: 2/6
+4: 1/36
+
+Selection: 1
+
+| Perseverance, that's the answer.
+  |========================                                             |  34%
+| Now consider the experiment of rolling 2 dice, one red and one green. Assume
+| the dice are fair and not loaded. How many distinct outcomes are possible?
+
+1: 12
+2: 11
+3: 36
+4: 1
+
+Selection: 3
+
+| That's the answer I was looking for.
+  |==========================                                           |  38%
+| If an event E can occur in more than one way and these ways are disjoint
+| (mutually exclusive) then P(E) is the sum of the probabilities of each of
+| the ways in which it can occur.
+
+...7
+  |=============================                                        |  41%
+| Rolling these two dice, what's the probability of rolling a 10?
+
+1: 1/6
+2: 3/36
+3: 2/36
+4: 0
+
+Selection: 1
+
+| Not quite right, but keep trying.
+
+| Since the highest possible dice roll is a '6', the only combinations which
+| give '10' are 4+6 and 5+5. The first occurs in two ways - red dice gets '4'
+| and green gets '6' OR red gets '6' and green gets '4'.
+
+1: 2/36
+2: 1/6
+3: 0
+4: 3/36
+
+Selection: 1
+
+| Keep trying!
+
+| Since the highest possible dice roll is a '6', the only combinations which
+| give '10' are 4+6 and 5+5. The first occurs in two ways - red dice gets '4'
+| and green gets '6' OR red gets '6' and green gets '4'.
+
+1: 3/36
+2: 0
+3: 1/6
+4: 2/36
+
+Selection: 4
+
+| That's not exactly what I'm looking for. Try again.
+
+| Since the highest possible dice roll is a '6', the only combinations which
+| give '10' are 4+6 and 5+5. The first occurs in two ways - red dice gets '4'
+| and green gets '6' OR red gets '6' and green gets '4'.
+
+1: 2/36
+2: 1/6
+3: 3/36
+4: 0
+
+Selection: 4
+
+| Not exactly. Give it another go.
+
+| Since the highest possible dice roll is a '6', the only combinations which
+| give '10' are 4+6 and 5+5. The first occurs in two ways - red dice gets '4'
+| and green gets '6' OR red gets '6' and green gets '4'.
+
+1: 0
+2: 2/36
+3: 1/6
+4: 3/36
+
+Selection: 3
+
+| Not quite, but you're learning! Try again.
+
+| Since the highest possible dice roll is a '6', the only combinations which
+| give '10' are 4+6 and 5+5. The first occurs in two ways - red dice gets '4'
+| and green gets '6' OR red gets '6' and green gets '4'.
+
+1: 0
+2: 2/36
+3: 3/36
+4: 1/6
+
+Selection: 2
+
+| Not quite! Try again.
+
+| Since the highest possible dice roll is a '6', the only combinations which
+| give '10' are 4+6 and 5+5. The first occurs in two ways - red dice gets '4'
+| and green gets '6' OR red gets '6' and green gets '4'.
+
+1: 0
+2: 2/36
+3: 1/6
+4: 3/36
+
+Selection: 4
+
+| You're the best!
+  |===============================                                      |  45%
+| What sum is the most likely when rolling these two dice?
+
+1: 9
+2: 12
+3: 1
+4: 2
+5: 7
+
+Selection: 5
+
+| You are amazing!
+  |=================================                                    |  48%
+| The probability of at least one of two events, A and B, occurring is the sum
+| of their individual probabilities minus the probability of their
+| intersection. P(A U B) = P(A) + P(B) - P(A&B).
+
+...8
+  |====================================                                 |  52%
+| It's easy to see why this is. Calculating P(A) and P(B) counts outcomes that
+| are in both A and B twice, so they're overcounted. The probability of the
+| intersection of the two events, denoted as A&B, must be subtracted from the
+| sum.
+
+...9
+  |======================================                               |  55%
+| Back to rolling two dice. Which expression represents the probability of
+| rolling an even number or a number greater than 8?
+
+1: (18+4-2)/36
+2: (18+10)/36
+3: (18+10-2)/36
+4: (18+10-4)/36
+
+Selection: 4
+
+| Nice work!
+  |========================================                             |  59%
+| It follows that if A and B are disjoint or mutually exclusive, i.e. only one
+| of them can occur, then P(A U B) = P(A)+P(B) .
+
+...15
+  |===========================================                          |  62%
+| Which of the following expressions represents the probability of rolling a
+| number greater than 10?
+
+1: (3+1-1)/36
+2: (1+1)/36
+3: (3+1)/36
+4: (2+1)/36
+
+Selection: 4
+
+| All that hard work is paying off!
+  |=============================================                        |  66%
+| Use the answer to the previous question and the fact that the sum of all
+| outcomes must sum to 1 to determine the probability of rolling a number less
+| than or equal to 10.
+
+> 7
+[1] 7
+
+| Almost! Try again. Or, type info() for more options.
+
+| Subtract the previous answer from 1.
+
+> info()
+
+| When you are at the R prompt (>):
+| -- Typing skip() allows you to skip the current question.
+| -- Typing play() lets you experiment with R on your own; swirl will ignore
+| what you do...
+| -- UNTIL you type nxt() which will regain swirl's attention.
+| -- Typing bye() causes swirl to exit. Your progress will be saved.
+| -- Typing main() returns you to swirl's main menu.
+| -- Typing info() displays these options again.
+
+> 2
+[1] 2
+
+| Keep trying! Or, type info() for more options.
+
+| Subtract the previous answer from 1.
+
+> 0.9166667
+[1] 0.9166667
+
+| That's not the answer I was looking for, but try again. Or, type info() for
+| more options.
+
+| Subtract the previous answer from 1.
+
+> 1-((2+1)/36)
+[1] 0.9166667
+
+| You're the best!
+  |================================================                     |  69%
+| Now we'll apply the concepts of probability to playing cards.
+
+...5
+  |==================================================                   |  72%
+| A deck of cards is a set of 52 cards, 4 suits of 13 cards each. There are
+| two red suits, diamonds and hearts, and two black suits, spades and clubs.
+| Each of the 13 cards in a suit has a value - an ace which is sometimes
+| thought of as 1, a number from 2 to 10, and 3 face cards, king, queen, and
+| jack. We've created a deck in R for you. Type 'deck' to see it now.
+
+> deck
+      spades      hearts      diamonds      clubs     
+ [1,] "A:spades"  "A:hearts"  "A:diamonds"  "A:clubs" 
+ [2,] "2:spades"  "2:hearts"  "2:diamonds"  "2:clubs" 
+ [3,] "3:spades"  "3:hearts"  "3:diamonds"  "3:clubs" 
+ [4,] "4:spades"  "4:hearts"  "4:diamonds"  "4:clubs" 
+ [5,] "5:spades"  "5:hearts"  "5:diamonds"  "5:clubs" 
+ [6,] "6:spades"  "6:hearts"  "6:diamonds"  "6:clubs" 
+ [7,] "7:spades"  "7:hearts"  "7:diamonds"  "7:clubs" 
+ [8,] "8:spades"  "8:hearts"  "8:diamonds"  "8:clubs" 
+ [9,] "9:spades"  "9:hearts"  "9:diamonds"  "9:clubs" 
+[10,] "10:spades" "10:hearts" "10:diamonds" "10:clubs"
+[11,] "J:spades"  "J:hearts"  "J:diamonds"  "J:clubs" 
+[12,] "Q:spades"  "Q:hearts"  "Q:diamonds"  "Q:clubs" 
+[13,] "K:spades"  "K:hearts"  "K:diamonds"  "K:clubs" 
+
+| That's a job well done!
+  |====================================================                 |  76%
+| When drawing a single card, how many outcomes are possible?
+
+> 52
+[1] 52
+
+| You are doing so well!
+  |=======================================================              |  79%
+| What is the probability of drawing a jack?
+
+> 4/54
+[1] 0.07407407
+
+| You almost had it, but not quite. Try again. Or, type info() for more
+| options.
+
+| How many jacks are in the deck? Divide this number by the number of cards in
+| the deck.
+
+> 1/52
+[1] 0.01923077
+
+| Almost! Try again. Or, type info() for more options.
+
+| How many jacks are in the deck? Divide this number by the number of cards in
+| the deck.
+
+> 2/52
+[1] 0.03846154
+
+| Not quite, but you're learning! Try again. Or, type info() for more options.
+
+| How many jacks are in the deck? Divide this number by the number of cards in
+| the deck.
+
+> 4/52
+[1] 0.07692308
+
+| Excellent job!
+  |=========================================================            |  83%
+| If you're dealt a hand of 5 cards, what is the probability of getting all 5
+| of the same value?
+
+> 
+> 2
+[1] 2
+
+| Give it another try. Or, type info() for more options.
+
+| There are only 4 different suits in a deck.
+
+> info()
+
+| When you are at the R prompt (>):
+| -- Typing skip() allows you to skip the current question.
+| -- Typing play() lets you experiment with R on your own; swirl will ignore
+| what you do...
+| -- UNTIL you type nxt() which will regain swirl's attention.
+| -- Typing bye() causes swirl to exit. Your progress will be saved.
+| -- Typing main() returns you to swirl's main menu.
+| -- Typing info() displays these options again.
+
+> skip()
+
+| Entering the following correct answer for you...
+
+> 0
+[1] 0
+
+| Your dedication is inspiring!
+  |===========================================================          |  86%
+| What is the probability of drawing a face card?
+
+> 12/52
+[1] 0.2307692
+
+| You are really on a roll!
+  |==============================================================       |  90%
+| Suppose you draw a face card and don't replace it in the deck. What is the
+| probability that when you draw a second card it also will be a face card?
+
+1: 11/52
+2: 11/51
+3: 12/51
+4: 0
+
+Selection: 2
+
+| You are amazing!
+  |================================================================     |  93%
+| Suppose you draw a face card and don't replace it in the deck. What is the
+| probability that when you draw a second card it also will be a face card of
+| the same suit?
+
+> 4/13
+[1] 0.3076923
+
+| Nice try, but that's not exactly what I was hoping for. Try again. Or, type
+| info() for more options.
+
+| There are 2 face cards of the same suit left in the deck.
+
+> 2/51
+[1] 0.03921569
+
+| Excellent job!
+  |===================================================================  |  97%
+| Congrats! With probability 1, you've aced this first lesson on basic
+| probability.
+
+...
+  |=====================================================================| 100%
+| Would you like to receive credit for completing this course on Coursera.org?
+
+1: No
+2: Yes
+
+Selection: 2
+What is your email address? ls00007@mix.wvu.edu
+What is your assignment token? task 01 c
+Grade submission failed.
+Press ESC if you want to exit this lesson and you
+want to try to submit your grade at a later time.
+
+| That's not the answer I was looking for, but try again.
+
+| 
+
+1: No
+2: Yes
+
+Selection: 2
+What is your email address? ls00007@mix.wvu.edu
+What is your assignment token? c
+Grade submission failed.
+Press ESC if you want to exit this lesson and you
+want to try to submit your grade at a later time.
+
+| You almost had it, but not quite. Try again.
+
+| 
+
+1: Yes
+2: No
+
+Selection: 2
+
+| Great job!
+
+| You've reached the end of this lesson! Returning to the main menu...
+
+| Please choose a course, or type 0 to exit swirl.
+
+1: Statistical Inference
+2: Take me to the swirl course repository!
+
+Selection: 
+Enter an item from the menu, or 0 to exit
+Selection: 2
+
+| OK. I'm opening the swirl courses web page in your browser.
+
+| Leaving swirl now. Type swirl() to resume.
+
+> cd ~/Desktop/Evolution/Task
+Error: unexpected '/' in "cd ~/"
+> cd ~ /Desktop/Evolution/Tasks
+Error: unexpected '/' in "cd ~ /"
+> 
