@@ -1,0 +1,19 @@
+library(learnPopGen)#
+> ?coalescent.plot
+library(learnPopGen)#
+?coalescent.plot
+coalescent.plot(n=177,ngen=21,col.order="alternating")#
+		object<-coalescent.plot()#
+		print(object)#
+		plot(object)
+source("http://jonsmitchell.com/code/reformatData07.R")
+source("http://jonsmitchell.com/code/simFxn.R")
+source("http://jonsmitchell.com/code/simFxn.R")#
+source("http://jonsmitchell.com/code/reformatData07.R")#
+source("http://jonsmitchell.com/code/simFxn.R")
+plot(1, 1, type="n" , xlim=c(1998, 2013), ylim=c(0, 1))
+s <- apply (overallFreq, 2, function(x) lines(overallFreq[,1], x, col= rgb #
+(0,0,0,0.01)))
+plot(1, 1, type="n" , xlim=c(1998, 2013), ylim=c(0, 1))#
+s <- apply (overallFreq, 2, function(x) lines(overallFreq[,1], x, col= rgb #
+(0,0,0,0.01)))

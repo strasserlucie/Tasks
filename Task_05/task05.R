@@ -125,7 +125,7 @@ abline(lm(mean_pi ~ theta))
 
 II) 
 library(learnPopGen)
-> ?coalescent.plot
+?coalescent.plot
 coalescent.plot(n=20,ngen=30,col.order="alternating")
 		object<-coalescent.plot()
 		print(object)
