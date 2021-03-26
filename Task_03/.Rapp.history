@@ -1,0 +1,6 @@
+phytools
+library("apelibraries")
+load("/Users/luciestrasser/Downloads/doi_10.5061_dryad.j6q573n9g__v3 (2)/Dataset3_Heritability_analysis_generation_time.rdata")
+load("/Users/luciestrasser/Downloads/doi_10.5061_dryad.j6q573n9g__v3 (2)/Dataset4_Heritability_analysis_speed.rdata")
+install.packages("ape libraries")
+install.packages("ape libraries")
