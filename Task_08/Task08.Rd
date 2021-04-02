@@ -66,8 +66,12 @@ install.packages("geiger")
 
 ?fastAnc
 
-#7 
+#7 Fossils increase estimated ancestral state estimates
 
 #8-10
+fitContinuous(tree, svl, model='EB')
+fitContinuous(tree, svl, model='OU')
+fitContinuous(tree, svl, model='BM')
 
-
+EB has the lowerst and most negative A1C valuemeaning it is the ebst fit for the data
+fastAnc used BM and assumes different than fitContinuous. EB still is the best fit. 
