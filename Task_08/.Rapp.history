@@ -1,0 +1,167 @@
+library("phytools")
+plot(tree, type="fan")
+tree <-read.tree("https://jonsmitchell.com/data/anolis.tree")
+library("phytools")
+library("phytools")#
+library("ape")
+library("ape")
+library("phytools")
+tree <-read.tree("https://jonsmitchell.com/data/anolis.tree")
+tree <-read.tree("https://jonsmitchell.com/data/anolis.tre")
+plot(tree, type="fan")
+svl<-setNames(data$svl, rownames(data))
+data<- read.csv("http://jonsmitchell.com/data/svl.csv", stringsAsFactos=F, row.names=1)
+data <- read.csv("https://jonsmitchell.com/data/svl.csv", stringsAsFactors=F, row.names=1)#
+data#
+date [,1]
+svl<-setNames(data$svl, rownames(data))
+Ancestor<- fastAnc(tree, svl, cars=TRUE, CI=TRUE)
+fastAnc
+par(mar=c(0.1,0.1,0.1,0.1))#
+plot(tree, type="fan", lwd=2, show.tip.label=F)
+tiplabels(pch=16, cex=0.25*svl[tree$tip.label])#
+nodelabels(pch=16, cex=0.25*Ancestors$ace)
+tiplabels(pch=16, cex=0.25*svl[tree$tip.label])
+nodelabels(pch=16, cex=0.25*Ancestors$ace)
+Ancestors<- fastAnc(tree, svl, cars=TRUE, CI=TRUE)
+par(mar=c(0.1,0.1,0.1,0.1))#
+plot(tree, type="fan", lwd=2, show.tip.label=F)#
+tiplabels(pch=16, cex=0.25*svl[tree$tip.label])#
+nodelabels(pch=16, cex=0.25*Ancestors$ace)
+obj<- contMap(tree, svl, plot=F)#
+plot(obj, type="fan", legend=0.7*max(nodeHeights(tree)), sig=2, fsize=c(0.7, 0.9))
+fossilData<- data.fram(svl=log(c(25.4, 23.2, 17.7, 19.7, 24, 31)),
+tipl=c( "Anolis_aliniger", "Anolis_aliniger", "Anolis_occultus",
+"Anolis_ricordii", "Anolis_cristatellus", "Anolus_occultus"),
+tip2=c("Anolis_chlorocyanus", "Anolis_coelestinus", "Anolis_hendersoni",
+"Anolis_cybotes", "Anolis_angusticepts", "Anolis_angusticeps"))
+fossilData<- data.frame(svl=log(c(25.4, 23.2, 17.7, 19.7, 24, 31)), tipl=c( "Anolis_aliniger", "Anolis_aliniger", "Anolis_occultus", "Anolis_ricordii", "Anolis_cristatellus", "Anolus_occultus"), tip2=c("Anolis_chlorocyanus", "Anolis_coelestinus", "Anolis_hendersoni", "Anolis_cybotes", "Anolis_angusticepts", "Anolis_angusticeps"))
+setwd("~/Desktop/Evolution/Tasks/Task_08")#
+> library("phytools")#
+Loading required package: ape#
+Loading required package: maps#
+> tree <-read.tree("https://jonsmitchell.com/data/anolis.tre")#
+> plot(tree, type="fan")#
+> data <- read.csv("https://jonsmitchell.com/data/svl.csv", stringsAsFactors=F, row.names=1)#
+> dim(data)#
+[1] 82  1#
+> class(data)#
+[1] "data.frame"#
+> svl <- setNames(data$svl, rownames(data))#
+> svl#
+           Anolis_ahli         Anolis_allogus     Anolis_rubribarbus #
+              4.039125               4.040138               4.078469 #
+          Anolis_imias          Anolis_sagrei         Anolis_bremeri #
+              4.099687               4.067162               4.113371 #
+Anolis_quadriocellifer      Anolis_ophiolepis         Anolis_mestrei #
+              3.901619               3.637962               3.987147 #
+          Anolis_jubar      Anolis_homolechis        Anolis_confusus #
+              3.952605               4.032806               3.938442 #
+          Anolis_guafe         Anolis_garmani        Anolis_opalinus #
+              3.877457               4.769473               3.838376 #
+        Anolis_grahami     Anolis_valencienni      Anolis_lineatopus #
+              4.154274               4.321524               4.128612 #
+      Anolis_evermanni       Anolis_stratulus           Anolis_krugi #
+              4.165605               3.869881               3.886500 #
+     Anolis_pulchellus       Anolis_gundlachi       Anolis_poncensis #
+              3.799022               4.188105               3.820378 #
+          Anolis_cooki    Anolis_cristatellus    Anolis_brevirostris #
+              4.091535               4.189820               3.874155 #
+       Anolis_caudalis          Anolis_marron        Anolis_websteri #
+              3.911743               3.831810               3.916546 #
+      Anolis_distichus         Anolis_alumina    Anolis_semilineatus #
+              3.928796               3.588941               3.696631 #
+        Anolis_olssoni       Anolis_insolitus       Anolis_whitemani #
+              3.793899               3.800471               4.097479 #
+      Anolis_haetianus        Anolis_breslini         Anolis_armouri #
+              4.316542               4.051111               4.121684 #
+        Anolis_cybotes         Anolis_shrevei   Anolis_longitibialis #
+              4.210982               3.983003               4.242103 #
+        Anolis_strahmi        Anolis_marcanoi        Anolis_baleatus #
+              4.274271               4.079485               5.053056 #
+      Anolis_barahonae        Anolis_ricordii         Anolis_cuvieri #
+              5.076958               5.013963               4.875012 #
+  Anolis_altitudinalis        Anolis_oporinus        Anolis_isolepis #
+              3.842994               3.845670               3.657088 #
+       Anolis_allisoni        Anolis_porcatus        Anolis_loysiana #
+              4.375390               4.258991               3.701240 #
+        Anolis_guazuma        Anolis_placidus        Anolis_sheplani #
+              3.763884               3.773967               3.682924 #
+        Anolis_alayoni     Anolis_angusticeps        Anolis_paternus #
+              3.815705               3.788595               3.802961 #
+      Anolis_alutaceus    Anolis_inexpectatus       Anolis_clivicola #
+              3.554891               3.537439               3.758726 #
+   Anolis_cupeyalensis    Anolis_cyanopleurus         Anolis_alfaroi #
+              3.462014               3.630161               3.526655 #
+     Anolis_macilentus       Anolis_vanidicus        Anolis_baracoae #
+              3.715765               3.626206               5.042780 #
+         Anolis_noblei      Anolis_smallwoodi    Anolis_luteogularis #
+              5.083473               5.035096               5.101085 #
+      Anolis_equestris   Anolis_bahorucoensis Anolis_dolichocephalus #
+              5.113994               3.827445               3.908550 #
+     Anolis_hendersoni     Anolis_darlingtoni        Anolis_aliniger #
+              3.859835               4.302036               4.036557 #
+     Anolis_singularis    Anolis_chlorocyanus     Anolis_coelestinus #
+              4.057997               4.275448               4.297965 #
+       Anolis_occultus #
+              3.663049 #
+> Ancestors <- fastAnc(tree, svl, vars=TRUE, CI=TRUE)#
+> par(mar=c(0.1,0.1,0.1,0.1))#
+> plot(tree, type="fan", lwd=2, show.tip.label=F)#
+> tiplabels(pch=16, cex=0.25*svl[tree$tip.label])#
+> # adds the ancestral sates #
+> nodelabels(pch=16, cex=0.25*Ancestors$ace)#
+> obj <- contMap(tree, svl, plot=F)#
+> plot (obj, type="fan", legend= 0.7*max(nodeHeights(tree)), sig=2, fsize=c(0.7, 0.9))#
+> fossilData <- data.frame(svl=log(c(25.4, 23.2, 17.7, 19.7, 24, 31)), tip1=c("Anolis_aliniger", "Anolis_aliniger", "Anolis_occultus", "Anolis_ricordii", "Anolis_cristatellus", "Anolis_occultus"), tip2=c("Anolis_chlorocyanus", "Anolis_coelestinus", "Anolis_hendersoni", "Anolis_cybotes", "Anolis_angusticeps", "Anolis_angusticeps"))#
+> fossilNodes <-c()#
+> nodeN <-c()#
+> #
+> plot(tree, cex=0.5)#
+> for (i in 1:nrow(fossilData))	{#
++ 	Node <- fastMRCA(tree, fossilData [i,"tip1"], fossilData[i,"tip2"])#
++ 	fossilNodes[i] <- fossilData[i, "svl"]#
++ 	nodeN[i] <- Node#
++ 	nodelabels(node=Node, pch=21, bg="red", cex=1.2)#
++ }#
+> names(fossilNodes) <- nodeN#
+> Ancestors_withFossils <- fastAnc(tree, svl, anc.states=fossilNodes, CI=TRUE, var=TRUE)#
+> install.packages("geiger")
+setwd("~/Desktop/Evolution/Tasks/Task_08")#
+> library("phytools")#
+Loading required package: ape#
+Loading required package: maps#
+> tree <-read.tree("https://jonsmitchell.com/data/anolis.tre")#
+> plot(tree, type="fan")#
+> data <- read.csv("https://jonsmitchell.com/data/svl.csv", stringsAsFactors=F, row.names=1)#
+> dim(data)#
+[1] 82  1#
+> class(data)#
+[1] "data.frame"#
+> svl <- setNames(data$svl, rownames(data))#
+> svl
+fossilNodes<-c()#
+nodeN<- c()
+Node<- fastMRCA(tree, fossilData[im "tip1"], fossilData[i, "tip2"])#
+fossilNodes[i, "svl"]#
+nodeN[i]<-Node#
+plot(tree, cex=0.5)#
+> for (i in 1:nrow(fossilData))	{#
++ 	Node <- fastMRCA(tree, fossilData [i,"tip1"], fossilData[i,"tip2"])#
++ 	fossilNodes[i] <- fossilData[i, "svl"]#
++ 	nodeN[i] <- Node#
++ 	nodelabels(node=Node, pch=21, bg="red", cex=1.2)#
++ }#
+names(fossilNodes)<- nodeN
+Ancestors_withFossils<- fastAnc(tree, svl, anc.states=fossilNodes, CI=TRUE, var=TRUE)
+> install.packages("geiger")
+Ancestors_withFossils<- fastAnc(tree, svl, anc.states=fossilNodes, CI=TRUE, var=TRUE)#
+install.packages("geiger")
+fossilNodes <- c()#
+nodeN <- c()#
+{#
+for(i in 1:nrow(fossilData))#
+i <- 1 if( i == 1) {#
+print(Ancestors) }#
+}
+?fastAnc
