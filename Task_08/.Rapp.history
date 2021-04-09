@@ -165,3 +165,12 @@ i <- 1 if( i == 1) {#
 print(Ancestors) }#
 }
 ?fastAnc
+library("phytools")
+library("ape")
+library("phytools")
+trees <- sapply(mylist.trees,fuction(x) NULL)
+trees <- sapply(mylist.trees,function(x) NULL)
+len <- 5#
+empty_list <- vector(mode = "list", length = len)#
+empty_list#
+class(empty_list)
