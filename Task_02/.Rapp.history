@@ -20,3 +20,23 @@ totalNap#
 par(las=1,mar=c(5,5,1,1),mgp=c(2,0.5,0),tck=-0.01)#
 plot(as.numeric(names(totalNap)),totalNap,type="b",pch=16,xlab="age in days",ylab="Nap time in minutes")#
 cor.test(beren4$start_hour,beren4$sleepTime)
+install.packages("diversitree")
+library("diveryitree")
+library("diversitree")
+library("ape")
+transition_01to1 <- 0.1
+transition_01to1<- 0.1#
+transition_1to0<- 0.1#
+#
+speciation_0<- 0.2#
+extinctionn_0<- 0.1#
+#
+speciation_1<- 0.2#
+extinction_1<- 0.1
+axN<- 1e3#
+maxT<- 50#
+#
+Pars<- c(speciation_0, speciation_1, extinction_0, extinction_1, transition_0to1, transition_1to0)#
+#
+simTree<- tree.bisse(Pars, max.tara = maxN, max.t = maxT)#
+str(simTree)
